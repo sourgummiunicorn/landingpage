@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+body,
+html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	font-family: "Afacad Flux", Arial, sans-serif;
+	background-color: #f0f0f0;
+}
+
+/* Flexbox Container */
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	height: 100vh;
+	width: 100vw;
+	border: 5px solid black;
+}
+
+/* Mondrian Style Boxes for Button Effect */
+.box {
+	border: 5px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-grow: 1;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+	transition: 0.3s;
+}
+
+/* Specific Box Styles for Each Section */
+.box.blue {
+	background-color: #3498db;
+	flex-basis: 40%;
+}
+.box.red {
+	background-color: #e74c3c;
+	flex-basis: 30%;
+}
+.box.yellow {
+	background-color: #f1c40f;
+	flex-basis: 30%;
+}
+.box.black {
+	background-color: #000;
+	flex-basis: 15%;
+}
+.box.white {
+	background-color: #fff;
+	flex-basis: 15%;
+}
+
+/* Hover Effects for Boxes */
+.box:hover {
+	filter: brightness(80%);
+	transition: filter 0.3s;
+}
+
+/* Styling Audio Element */
+.audio-box {
+	display: none;
+}
+
+	/* Footer Styling */
+		footer {
+    font-family: "Afacad Flux", Arial, sans-serif;
+    width: 100%;
+    height: 60px;
+    background-color: #333; 
+    color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px 20px; 
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+    border-top: 2px solid #555; 
+}
+
+/* Footer Links Styling */
+footer a {
+    color: #1e90ff;
+    text-decoration: none; 
+    font-weight: bold; 
+    margin: 0 5px; 
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effects for Links */
+footer a:hover {
+    color: #ffdd57; 
+    text-shadow: 0 0 5px #ffdd57; 
+}
